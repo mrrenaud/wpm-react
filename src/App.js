@@ -25,7 +25,7 @@ class App extends Component {
   }
 
   start() {
-    if (this.state.start) {
+    if (this.state.started) {
       throw new Error('Already started.');
     }
 
