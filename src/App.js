@@ -45,7 +45,7 @@ class App extends Component {
     if (this.state.started) {
       const words = this.state.value.split(' ').filter(w => w).length;
       const ellapsed = new Date() - this.state.startedAt;
-      const wpm = Math.round(words / ellapsed * 60000);
+      const wpm = Math.round(words / ellapsed * 60000) || 0;
 
       return (
         <div>
